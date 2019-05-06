@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS" targetNamespace="http://tempuri.org/DS.xsd" xmlns:mstns="http://tempuri.org/DS.xsd" xmlns="http://tempuri.org/DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.ClassLibrary1.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Oracle.ManagedDataAccess.Client" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OBRESERVATableAdapter" GeneratorDataComponentClassName="OBRESERVATableAdapter" Name="OBRESERVA" UserDataComponentName="OBRESERVATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="OMNIBEES.OBRESERVA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "OMNIBEES"."OBRESERVA" ("RV_RESERVA", "RV_MAYORISTA", "RV_AGENCIA", "RV_GRUPO", "RV_PAIS", "RV_CODPOS", "RV_DIR1", "RV_DIR2", "RV_TIPO_HUESPED", "RV_VIP", "RV_ORIGEN", "RV_PROCEDE", "RV_VUELO", "RV_NOTAS", "RV_NOTAS_VIP", "RV_NOTAS_SIS", "RV_LLEGADA", "RV_SALIDA", "RV_NOCHES", "RV_LLEGADA_H", "RV_SALIDA_H", "RV_TIPO_HAB", "RV_TARIFA", "RV_ADULTO", "RV_MENOR", "RV_BEBE", "RV_FASE", "RV_PAQUETE", "RV_HABI", "RV_ROOMING", "RV_LINEA", "RV_CONFIRMA", "RV_CREDITO", "RV_VOUCHER", "RV_IMPORTE", "RV_TOT_ALOJ", "RV_TOT_PLAN", "RV_TOT_PAQUETE", "RV_DEPOSITO", "RV_LIMITE", "RV_CAP_F", "RV_CAP_H", "RV_CAP_U", "RV_CAN_C", "RV_CAN_F", "RV_CAN_H", "RV_CAN_U", "RV_MOD_F", "RV_MOD_H", "RV_MOD_U", "RV_ENT_U", "RV_SAL_U", "RV_HOTEL_DEST", "RV_RESERVA_P", "RV_HOTEL_ORIG", "RV_EXTRAS_CXC", "RV_LLAVES", "RV_PLAN_DES", "RV_PLAN_COM", "RV_PLAN_CEN", "RV_STATUS", "RV_PLANES", "RV_SALIDA_PREV", "RV_CXC_MOVI", "RV_CXC_FASE", "RV_BON_BEB", "RV_BON_COM", "RV_CAJA_SEG", "RV_OUT_EXPRESS", "RV_RAZON", "RV_RFC", "RV_FACTURA", "RV_IMPRESA", "RV_FACTURA_AGE", "RV_TOT_PROP_CAM", "RV_TOT_PROP_BEL", "RV_TOT_PROP_MES", "RV_TOT_IVA", "RV_POLIZA", "RV_F_PAGO_MOVI", "RV_F_PAGO_FASE", "RV_TARJ_NUMERO", "RV_TARJ_VENCIM", "RV_FOLIO_CR", "RV_SERVIBAR", "RV_SERVIBAR_U", "RV_TIPO_HAB_RENTA", "RV_HOTEL_RENTA", "RV_EMAIL", "RV_MONEDA", "RV_PREPAGO_F", "RV_PREPAGO_I", "RV_PROMOCION", "RV_TC", "RV_JUNIOR", "RV_EDIFICIO", "RV_DESPLAZO_F", "RV_RESERVA_ORIG", "RV_RESERVA_DEST", "RV_TIPO_VENTA", "RV_SERIE", "RV_CREDITO_HOTEL", "RV_CATEGORIA", "RV_ACTION", "OB_RESERVA") VALUES (:RV_RESERVA, :RV_MAYORISTA, :RV_AGENCIA, :RV_GRUPO, :RV_PAIS, :RV_CODPOS, :RV_DIR1, :RV_DIR2, :RV_TIPO_HUESPED, :RV_VIP, :RV_ORIGEN, :RV_PROCEDE, :RV_VUELO, :RV_NOTAS, :RV_NOTAS_VIP, :RV_NOTAS_SIS, :RV_LLEGADA, :RV_SALIDA, :RV_NOCHES, :RV_LLEGADA_H, :RV_SALIDA_H, :RV_TIPO_HAB, :RV_TARIFA, :RV_ADULTO, :RV_MENOR, :RV_BEBE, :RV_FASE, :RV_PAQUETE, :RV_HABI, :RV_ROOMING, :RV_LINEA, :RV_CONFIRMA, :RV_CREDITO, :RV_VOUCHER, :RV_IMPORTE, :RV_TOT_ALOJ, :RV_TOT_PLAN, :RV_TOT_PAQUETE, :RV_DEPOSITO, :RV_LIMITE, :RV_CAP_F, :RV_CAP_H, :RV_CAP_U, :RV_CAN_C, :RV_CAN_F, :RV_CAN_H, :RV_CAN_U, :RV_MOD_F, :RV_MOD_H, :RV_MOD_U, :RV_ENT_U, :RV_SAL_U, :RV_HOTEL_DEST, :RV_RESERVA_P, :RV_HOTEL_ORIG, :RV_EXTRAS_CXC, :RV_LLAVES, :RV_PLAN_DES, :RV_PLAN_COM, :RV_PLAN_CEN, :RV_STATUS, :RV_PLANES, :RV_SALIDA_PREV, :RV_CXC_MOVI, :RV_CXC_FASE, :RV_BON_BEB, :RV_BON_COM, :RV_CAJA_SEG, :RV_OUT_EXPRESS, :RV_RAZON, :RV_RFC, :RV_FACTURA, :RV_IMPRESA, :RV_FACTURA_AGE, :RV_TOT_PROP_CAM, :RV_TOT_PROP_BEL, :RV_TOT_PROP_MES, :RV_TOT_IVA, :RV_POLIZA, :RV_F_PAGO_MOVI, :RV_F_PAGO_FASE, :RV_TARJ_NUMERO, :RV_TARJ_VENCIM, :RV_FOLIO_CR, :RV_SERVIBAR, :RV_SERVIBAR_U, :RV_TIPO_HAB_RENTA, :RV_HOTEL_RENTA, :RV_EMAIL, :RV_MONEDA, :RV_PREPAGO_F, :RV_PREPAGO_I, :RV_PROMOCION, :RV_TC, :RV_JUNIOR, :RV_EDIFICIO, :RV_DESPLAZO_F, :RV_RESERVA_ORIG, :RV_RESERVA_DEST, :RV_TIPO_VENTA, :RV_SERIE, :RV_CREDITO_HOTEL, :RV_CATEGORIA, :RV_ACTION, :OB_RESERVA)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_RESERVA" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_RESERVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_MAYORISTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_MAYORISTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_AGENCIA" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_AGENCIA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_GRUPO" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="RV_GRUPO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_PAIS" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="RV_PAIS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CODPOS" Precision="0" ProviderType="Varchar2" Scale="0" Size="7" SourceColumn="RV_CODPOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_DIR1" Precision="0" ProviderType="Varchar2" Scale="0" Size="200" SourceColumn="RV_DIR1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_DIR2" Precision="0" ProviderType="Varchar2" Scale="0" Size="200" SourceColumn="RV_DIR2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TIPO_HUESPED" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="RV_TIPO_HUESPED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_VIP" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_VIP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_ORIGEN" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="RV_ORIGEN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_PROCEDE" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="RV_PROCEDE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_VUELO" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="RV_VUELO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_NOTAS" Precision="0" ProviderType="Varchar2" Scale="0" Size="4000" SourceColumn="RV_NOTAS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_NOTAS_VIP" Precision="0" ProviderType="Varchar2" Scale="0" Size="40" SourceColumn="RV_NOTAS_VIP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_NOTAS_SIS" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="RV_NOTAS_SIS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_LLEGADA" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_LLEGADA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SALIDA" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_SALIDA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_NOCHES" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_NOCHES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_LLEGADA_H" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_LLEGADA_H" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SALIDA_H" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_SALIDA_H" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TIPO_HAB" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_TIPO_HAB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TARIFA" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="RV_TARIFA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_ADULTO" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_ADULTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_MENOR" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_MENOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_BEBE" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_BEBE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_FASE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_FASE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_PAQUETE" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_PAQUETE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_HABI" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="RV_HABI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="RV_ROOMING" Precision="0" ProviderType="Int32" Scale="0" Size="22" SourceColumn="RV_ROOMING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_LINEA" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_LINEA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CONFIRMA" Precision="0" ProviderType="Varchar2" Scale="0" Size="18" SourceColumn="RV_CONFIRMA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CREDITO" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_CREDITO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_VOUCHER" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_VOUCHER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="RV_IMPORTE" Precision="0" ProviderType="Double" Scale="0" Size="22" SourceColumn="RV_IMPORTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_ALOJ" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_ALOJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_PLAN" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_PLAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_PAQUETE" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_PAQUETE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_DEPOSITO" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_DEPOSITO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_LIMITE" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_LIMITE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAP_F" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_CAP_F" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAP_H" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_CAP_H" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAP_U" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_CAP_U" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAN_C" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="RV_CAN_C" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="RV_CAN_F" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="RV_CAN_F" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAN_H" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_CAN_H" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAN_U" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_CAN_U" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="RV_MOD_F" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="RV_MOD_F" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_MOD_H" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_MOD_H" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_MOD_U" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_MOD_U" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_ENT_U" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_ENT_U" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SAL_U" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_SAL_U" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_HOTEL_DEST" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="RV_HOTEL_DEST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_RESERVA_P" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="RV_RESERVA_P" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_HOTEL_ORIG" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="RV_HOTEL_ORIG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_EXTRAS_CXC" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_EXTRAS_CXC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_LLAVES" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_LLAVES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_PLAN_DES" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_PLAN_DES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_PLAN_COM" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_PLAN_COM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_PLAN_CEN" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_PLAN_CEN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_STATUS" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_PLANES" Precision="0" ProviderType="Varchar2" Scale="0" Size="19" SourceColumn="RV_PLANES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SALIDA_PREV" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_SALIDA_PREV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CXC_MOVI" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_CXC_MOVI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CXC_FASE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_CXC_FASE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_BON_BEB" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_BON_BEB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_BON_COM" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_BON_COM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CAJA_SEG" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="RV_CAJA_SEG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_OUT_EXPRESS" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_OUT_EXPRESS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_RAZON" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="RV_RAZON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_RFC" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="RV_RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_FACTURA" Precision="0" ProviderType="Varchar2" Scale="0" Size="7" SourceColumn="RV_FACTURA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_IMPRESA" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_IMPRESA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_FACTURA_AGE" Precision="0" ProviderType="Varchar2" Scale="0" Size="7" SourceColumn="RV_FACTURA_AGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_PROP_CAM" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_PROP_CAM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_PROP_BEL" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_PROP_BEL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_PROP_MES" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_PROP_MES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TOT_IVA" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TOT_IVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="RV_POLIZA" Precision="0" ProviderType="Int32" Scale="0" Size="22" SourceColumn="RV_POLIZA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_F_PAGO_MOVI" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_F_PAGO_MOVI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_F_PAGO_FASE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_F_PAGO_FASE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TARJ_NUMERO" Precision="0" ProviderType="Varchar2" Scale="0" Size="16" SourceColumn="RV_TARJ_NUMERO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TARJ_VENCIM" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="RV_TARJ_VENCIM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_FOLIO_CR" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="RV_FOLIO_CR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SERVIBAR" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="RV_SERVIBAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SERVIBAR_U" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="RV_SERVIBAR_U" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TIPO_HAB_RENTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_TIPO_HAB_RENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_HOTEL_RENTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="RV_HOTEL_RENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_EMAIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="40" SourceColumn="RV_EMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_MONEDA" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="RV_MONEDA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="RV_PREPAGO_F" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="RV_PREPAGO_F" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="RV_PREPAGO_I" Precision="0" ProviderType="Double" Scale="0" Size="22" SourceColumn="RV_PREPAGO_I" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_PROMOCION" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_PROMOCION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="RV_TC" Precision="0" ProviderType="Single" Scale="0" Size="22" SourceColumn="RV_TC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="RV_JUNIOR" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="RV_JUNIOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_EDIFICIO" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_EDIFICIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="RV_DESPLAZO_F" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="RV_DESPLAZO_F" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_RESERVA_ORIG" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="RV_RESERVA_ORIG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_RESERVA_DEST" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="RV_RESERVA_DEST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_TIPO_VENTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="12" SourceColumn="RV_TIPO_VENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_SERIE" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="RV_SERIE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CREDITO_HOTEL" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="RV_CREDITO_HOTEL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_CATEGORIA" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="RV_CATEGORIA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="RV_ACTION" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="RV_ACTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="OB_RESERVA" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="OB_RESERVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RV_RESERVA, RV_MAYORISTA, RV_AGENCIA, RV_GRUPO, RV_PAIS, RV_CODPOS, RV_DIR1, RV_DIR2, RV_TIPO_HUESPED, RV_VIP, RV_ORIGEN, RV_PROCEDE, RV_VUELO, RV_NOTAS, RV_NOTAS_VIP, RV_NOTAS_SIS, RV_LLEGADA, RV_SALIDA, RV_NOCHES, RV_LLEGADA_H, RV_SALIDA_H, RV_TIPO_HAB, RV_TARIFA, RV_ADULTO, RV_MENOR, RV_BEBE, RV_FASE, RV_PAQUETE, RV_HABI, RV_ROOMING, RV_LINEA, RV_CONFIRMA, RV_CREDITO, RV_VOUCHER, RV_IMPORTE, RV_TOT_ALOJ, RV_TOT_PLAN, RV_TOT_PAQUETE, RV_DEPOSITO, RV_LIMITE, RV_CAP_F, RV_CAP_H, RV_CAP_U, RV_CAN_C, RV_CAN_F, RV_CAN_H, RV_CAN_U, RV_MOD_F, RV_MOD_H, RV_MOD_U, RV_ENT_U, RV_SAL_U, RV_HOTEL_DEST, RV_RESERVA_P, RV_HOTEL_ORIG, RV_EXTRAS_CXC, RV_LLAVES, RV_PLAN_DES, RV_PLAN_COM, RV_PLAN_CEN, RV_STATUS, RV_PLANES, RV_SALIDA_PREV, RV_CXC_MOVI, RV_CXC_FASE, RV_BON_BEB, RV_BON_COM, RV_CAJA_SEG, RV_OUT_EXPRESS, RV_RAZON, RV_RFC, RV_FACTURA, RV_IMPRESA, RV_FACTURA_AGE, RV_TOT_PROP_CAM, RV_TOT_PROP_BEL, RV_TOT_PROP_MES, RV_TOT_IVA, RV_POLIZA, RV_F_PAGO_MOVI, RV_F_PAGO_FASE, RV_TARJ_NUMERO, RV_TARJ_VENCIM, RV_FOLIO_CR, RV_SERVIBAR, RV_SERVIBAR_U, RV_TIPO_HAB_RENTA, RV_HOTEL_RENTA, RV_EMAIL, RV_MONEDA, RV_PREPAGO_F, RV_PREPAGO_I, RV_PROMOCION, RV_TC, RV_JUNIOR, RV_EDIFICIO, RV_DESPLAZO_F, RV_RESERVA_ORIG, RV_RESERVA_DEST, RV_TIPO_VENTA, RV_SERIE, RV_CREDITO_HOTEL, RV_CATEGORIA, RV_ACTION, OB_RESERVA FROM OMNIBEES.OBRESERVA</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RV_RESERVA" DataSetColumn="RV_RESERVA" />
+              <Mapping SourceColumn="RV_MAYORISTA" DataSetColumn="RV_MAYORISTA" />
+              <Mapping SourceColumn="RV_AGENCIA" DataSetColumn="RV_AGENCIA" />
+              <Mapping SourceColumn="RV_GRUPO" DataSetColumn="RV_GRUPO" />
+              <Mapping SourceColumn="RV_PAIS" DataSetColumn="RV_PAIS" />
+              <Mapping SourceColumn="RV_CODPOS" DataSetColumn="RV_CODPOS" />
+              <Mapping SourceColumn="RV_DIR1" DataSetColumn="RV_DIR1" />
+              <Mapping SourceColumn="RV_DIR2" DataSetColumn="RV_DIR2" />
+              <Mapping SourceColumn="RV_TIPO_HUESPED" DataSetColumn="RV_TIPO_HUESPED" />
+              <Mapping SourceColumn="RV_VIP" DataSetColumn="RV_VIP" />
+              <Mapping SourceColumn="RV_ORIGEN" DataSetColumn="RV_ORIGEN" />
+              <Mapping SourceColumn="RV_PROCEDE" DataSetColumn="RV_PROCEDE" />
+              <Mapping SourceColumn="RV_VUELO" DataSetColumn="RV_VUELO" />
+              <Mapping SourceColumn="RV_NOTAS" DataSetColumn="RV_NOTAS" />
+              <Mapping SourceColumn="RV_NOTAS_VIP" DataSetColumn="RV_NOTAS_VIP" />
+              <Mapping SourceColumn="RV_NOTAS_SIS" DataSetColumn="RV_NOTAS_SIS" />
+              <Mapping SourceColumn="RV_LLEGADA" DataSetColumn="RV_LLEGADA" />
+              <Mapping SourceColumn="RV_SALIDA" DataSetColumn="RV_SALIDA" />
+              <Mapping SourceColumn="RV_NOCHES" DataSetColumn="RV_NOCHES" />
+              <Mapping SourceColumn="RV_LLEGADA_H" DataSetColumn="RV_LLEGADA_H" />
+              <Mapping SourceColumn="RV_SALIDA_H" DataSetColumn="RV_SALIDA_H" />
+              <Mapping SourceColumn="RV_TIPO_HAB" DataSetColumn="RV_TIPO_HAB" />
+              <Mapping SourceColumn="RV_TARIFA" DataSetColumn="RV_TARIFA" />
+              <Mapping SourceColumn="RV_ADULTO" DataSetColumn="RV_ADULTO" />
+              <Mapping SourceColumn="RV_MENOR" DataSetColumn="RV_MENOR" />
+              <Mapping SourceColumn="RV_BEBE" DataSetColumn="RV_BEBE" />
+              <Mapping SourceColumn="RV_FASE" DataSetColumn="RV_FASE" />
+              <Mapping SourceColumn="RV_PAQUETE" DataSetColumn="RV_PAQUETE" />
+              <Mapping SourceColumn="RV_HABI" DataSetColumn="RV_HABI" />
+              <Mapping SourceColumn="RV_ROOMING" DataSetColumn="RV_ROOMING" />
+              <Mapping SourceColumn="RV_LINEA" DataSetColumn="RV_LINEA" />
+              <Mapping SourceColumn="RV_CONFIRMA" DataSetColumn="RV_CONFIRMA" />
+              <Mapping SourceColumn="RV_CREDITO" DataSetColumn="RV_CREDITO" />
+              <Mapping SourceColumn="RV_VOUCHER" DataSetColumn="RV_VOUCHER" />
+              <Mapping SourceColumn="RV_IMPORTE" DataSetColumn="RV_IMPORTE" />
+              <Mapping SourceColumn="RV_TOT_ALOJ" DataSetColumn="RV_TOT_ALOJ" />
+              <Mapping SourceColumn="RV_TOT_PLAN" DataSetColumn="RV_TOT_PLAN" />
+              <Mapping SourceColumn="RV_TOT_PAQUETE" DataSetColumn="RV_TOT_PAQUETE" />
+              <Mapping SourceColumn="RV_DEPOSITO" DataSetColumn="RV_DEPOSITO" />
+              <Mapping SourceColumn="RV_LIMITE" DataSetColumn="RV_LIMITE" />
+              <Mapping SourceColumn="RV_CAP_F" DataSetColumn="RV_CAP_F" />
+              <Mapping SourceColumn="RV_CAP_H" DataSetColumn="RV_CAP_H" />
+              <Mapping SourceColumn="RV_CAP_U" DataSetColumn="RV_CAP_U" />
+              <Mapping SourceColumn="RV_CAN_C" DataSetColumn="RV_CAN_C" />
+              <Mapping SourceColumn="RV_CAN_F" DataSetColumn="RV_CAN_F" />
+              <Mapping SourceColumn="RV_CAN_H" DataSetColumn="RV_CAN_H" />
+              <Mapping SourceColumn="RV_CAN_U" DataSetColumn="RV_CAN_U" />
+              <Mapping SourceColumn="RV_MOD_F" DataSetColumn="RV_MOD_F" />
+              <Mapping SourceColumn="RV_MOD_H" DataSetColumn="RV_MOD_H" />
+              <Mapping SourceColumn="RV_MOD_U" DataSetColumn="RV_MOD_U" />
+              <Mapping SourceColumn="RV_ENT_U" DataSetColumn="RV_ENT_U" />
+              <Mapping SourceColumn="RV_SAL_U" DataSetColumn="RV_SAL_U" />
+              <Mapping SourceColumn="RV_HOTEL_DEST" DataSetColumn="RV_HOTEL_DEST" />
+              <Mapping SourceColumn="RV_RESERVA_P" DataSetColumn="RV_RESERVA_P" />
+              <Mapping SourceColumn="RV_HOTEL_ORIG" DataSetColumn="RV_HOTEL_ORIG" />
+              <Mapping SourceColumn="RV_EXTRAS_CXC" DataSetColumn="RV_EXTRAS_CXC" />
+              <Mapping SourceColumn="RV_LLAVES" DataSetColumn="RV_LLAVES" />
+              <Mapping SourceColumn="RV_PLAN_DES" DataSetColumn="RV_PLAN_DES" />
+              <Mapping SourceColumn="RV_PLAN_COM" DataSetColumn="RV_PLAN_COM" />
+              <Mapping SourceColumn="RV_PLAN_CEN" DataSetColumn="RV_PLAN_CEN" />
+              <Mapping SourceColumn="RV_STATUS" DataSetColumn="RV_STATUS" />
+              <Mapping SourceColumn="RV_PLANES" DataSetColumn="RV_PLANES" />
+              <Mapping SourceColumn="RV_SALIDA_PREV" DataSetColumn="RV_SALIDA_PREV" />
+              <Mapping SourceColumn="RV_CXC_MOVI" DataSetColumn="RV_CXC_MOVI" />
+              <Mapping SourceColumn="RV_CXC_FASE" DataSetColumn="RV_CXC_FASE" />
+              <Mapping SourceColumn="RV_BON_BEB" DataSetColumn="RV_BON_BEB" />
+              <Mapping SourceColumn="RV_BON_COM" DataSetColumn="RV_BON_COM" />
+              <Mapping SourceColumn="RV_CAJA_SEG" DataSetColumn="RV_CAJA_SEG" />
+              <Mapping SourceColumn="RV_OUT_EXPRESS" DataSetColumn="RV_OUT_EXPRESS" />
+              <Mapping SourceColumn="RV_RAZON" DataSetColumn="RV_RAZON" />
+              <Mapping SourceColumn="RV_RFC" DataSetColumn="RV_RFC" />
+              <Mapping SourceColumn="RV_FACTURA" DataSetColumn="RV_FACTURA" />
+              <Mapping SourceColumn="RV_IMPRESA" DataSetColumn="RV_IMPRESA" />
+              <Mapping SourceColumn="RV_FACTURA_AGE" DataSetColumn="RV_FACTURA_AGE" />
+              <Mapping SourceColumn="RV_TOT_PROP_CAM" DataSetColumn="RV_TOT_PROP_CAM" />
+              <Mapping SourceColumn="RV_TOT_PROP_BEL" DataSetColumn="RV_TOT_PROP_BEL" />
+              <Mapping SourceColumn="RV_TOT_PROP_MES" DataSetColumn="RV_TOT_PROP_MES" />
+              <Mapping SourceColumn="RV_TOT_IVA" DataSetColumn="RV_TOT_IVA" />
+              <Mapping SourceColumn="RV_POLIZA" DataSetColumn="RV_POLIZA" />
+              <Mapping SourceColumn="RV_F_PAGO_MOVI" DataSetColumn="RV_F_PAGO_MOVI" />
+              <Mapping SourceColumn="RV_F_PAGO_FASE" DataSetColumn="RV_F_PAGO_FASE" />
+              <Mapping SourceColumn="RV_TARJ_NUMERO" DataSetColumn="RV_TARJ_NUMERO" />
+              <Mapping SourceColumn="RV_TARJ_VENCIM" DataSetColumn="RV_TARJ_VENCIM" />
+              <Mapping SourceColumn="RV_FOLIO_CR" DataSetColumn="RV_FOLIO_CR" />
+              <Mapping SourceColumn="RV_SERVIBAR" DataSetColumn="RV_SERVIBAR" />
+              <Mapping SourceColumn="RV_SERVIBAR_U" DataSetColumn="RV_SERVIBAR_U" />
+              <Mapping SourceColumn="RV_TIPO_HAB_RENTA" DataSetColumn="RV_TIPO_HAB_RENTA" />
+              <Mapping SourceColumn="RV_HOTEL_RENTA" DataSetColumn="RV_HOTEL_RENTA" />
+              <Mapping SourceColumn="RV_EMAIL" DataSetColumn="RV_EMAIL" />
+              <Mapping SourceColumn="RV_MONEDA" DataSetColumn="RV_MONEDA" />
+              <Mapping SourceColumn="RV_PREPAGO_F" DataSetColumn="RV_PREPAGO_F" />
+              <Mapping SourceColumn="RV_PREPAGO_I" DataSetColumn="RV_PREPAGO_I" />
+              <Mapping SourceColumn="RV_PROMOCION" DataSetColumn="RV_PROMOCION" />
+              <Mapping SourceColumn="RV_TC" DataSetColumn="RV_TC" />
+              <Mapping SourceColumn="RV_JUNIOR" DataSetColumn="RV_JUNIOR" />
+              <Mapping SourceColumn="RV_EDIFICIO" DataSetColumn="RV_EDIFICIO" />
+              <Mapping SourceColumn="RV_DESPLAZO_F" DataSetColumn="RV_DESPLAZO_F" />
+              <Mapping SourceColumn="RV_RESERVA_ORIG" DataSetColumn="RV_RESERVA_ORIG" />
+              <Mapping SourceColumn="RV_RESERVA_DEST" DataSetColumn="RV_RESERVA_DEST" />
+              <Mapping SourceColumn="RV_TIPO_VENTA" DataSetColumn="RV_TIPO_VENTA" />
+              <Mapping SourceColumn="RV_SERIE" DataSetColumn="RV_SERIE" />
+              <Mapping SourceColumn="RV_CREDITO_HOTEL" DataSetColumn="RV_CREDITO_HOTEL" />
+              <Mapping SourceColumn="RV_CATEGORIA" DataSetColumn="RV_CATEGORIA" />
+              <Mapping SourceColumn="RV_ACTION" DataSetColumn="RV_ACTION" />
+              <Mapping SourceColumn="OB_RESERVA" DataSetColumn="OB_RESERVA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS" msprop:Generator_UserDSName="DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OBRESERVA" msprop:Generator_TableClassName="OBRESERVADataTable" msprop:Generator_TableVarName="tableOBRESERVA" msprop:Generator_TablePropName="OBRESERVA" msprop:Generator_RowDeletingName="OBRESERVARowDeleting" msprop:Generator_RowChangingName="OBRESERVARowChanging" msprop:Generator_RowEvHandlerName="OBRESERVARowChangeEventHandler" msprop:Generator_RowDeletedName="OBRESERVARowDeleted" msprop:Generator_UserTableName="OBRESERVA" msprop:Generator_RowChangedName="OBRESERVARowChanged" msprop:Generator_RowEvArgName="OBRESERVARowChangeEvent" msprop:Generator_RowClassName="OBRESERVARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RV_RESERVA" msprop:Generator_ColumnVarNameInTable="columnRV_RESERVA" msprop:Generator_ColumnPropNameInRow="RV_RESERVA" msprop:Generator_ColumnPropNameInTable="RV_RESERVAColumn" msprop:Generator_UserColumnName="RV_RESERVA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_MAYORISTA" msprop:Generator_ColumnVarNameInTable="columnRV_MAYORISTA" msprop:Generator_ColumnPropNameInRow="RV_MAYORISTA" msprop:Generator_ColumnPropNameInTable="RV_MAYORISTAColumn" msprop:Generator_UserColumnName="RV_MAYORISTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_AGENCIA" msprop:Generator_ColumnVarNameInTable="columnRV_AGENCIA" msprop:Generator_ColumnPropNameInRow="RV_AGENCIA" msprop:Generator_ColumnPropNameInTable="RV_AGENCIAColumn" msprop:Generator_UserColumnName="RV_AGENCIA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_GRUPO" msprop:Generator_ColumnVarNameInTable="columnRV_GRUPO" msprop:Generator_ColumnPropNameInRow="RV_GRUPO" msprop:Generator_ColumnPropNameInTable="RV_GRUPOColumn" msprop:Generator_UserColumnName="RV_GRUPO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_PAIS" msprop:Generator_ColumnVarNameInTable="columnRV_PAIS" msprop:Generator_ColumnPropNameInRow="RV_PAIS" msprop:Generator_ColumnPropNameInTable="RV_PAISColumn" msprop:Generator_UserColumnName="RV_PAIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CODPOS" msprop:Generator_ColumnVarNameInTable="columnRV_CODPOS" msprop:Generator_ColumnPropNameInRow="RV_CODPOS" msprop:Generator_ColumnPropNameInTable="RV_CODPOSColumn" msprop:Generator_UserColumnName="RV_CODPOS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_DIR1" msprop:Generator_ColumnVarNameInTable="columnRV_DIR1" msprop:Generator_ColumnPropNameInRow="RV_DIR1" msprop:Generator_ColumnPropNameInTable="RV_DIR1Column" msprop:Generator_UserColumnName="RV_DIR1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_DIR2" msprop:Generator_ColumnVarNameInTable="columnRV_DIR2" msprop:Generator_ColumnPropNameInRow="RV_DIR2" msprop:Generator_ColumnPropNameInTable="RV_DIR2Column" msprop:Generator_UserColumnName="RV_DIR2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TIPO_HUESPED" msprop:Generator_ColumnVarNameInTable="columnRV_TIPO_HUESPED" msprop:Generator_ColumnPropNameInRow="RV_TIPO_HUESPED" msprop:Generator_ColumnPropNameInTable="RV_TIPO_HUESPEDColumn" msprop:Generator_UserColumnName="RV_TIPO_HUESPED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_VIP" msprop:Generator_ColumnVarNameInTable="columnRV_VIP" msprop:Generator_ColumnPropNameInRow="RV_VIP" msprop:Generator_ColumnPropNameInTable="RV_VIPColumn" msprop:Generator_UserColumnName="RV_VIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_ORIGEN" msprop:Generator_ColumnVarNameInTable="columnRV_ORIGEN" msprop:Generator_ColumnPropNameInRow="RV_ORIGEN" msprop:Generator_ColumnPropNameInTable="RV_ORIGENColumn" msprop:Generator_UserColumnName="RV_ORIGEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_PROCEDE" msprop:Generator_ColumnVarNameInTable="columnRV_PROCEDE" msprop:Generator_ColumnPropNameInRow="RV_PROCEDE" msprop:Generator_ColumnPropNameInTable="RV_PROCEDEColumn" msprop:Generator_UserColumnName="RV_PROCEDE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_VUELO" msprop:Generator_ColumnVarNameInTable="columnRV_VUELO" msprop:Generator_ColumnPropNameInRow="RV_VUELO" msprop:Generator_ColumnPropNameInTable="RV_VUELOColumn" msprop:Generator_UserColumnName="RV_VUELO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_NOTAS" msprop:Generator_ColumnVarNameInTable="columnRV_NOTAS" msprop:Generator_ColumnPropNameInRow="RV_NOTAS" msprop:Generator_ColumnPropNameInTable="RV_NOTASColumn" msprop:Generator_UserColumnName="RV_NOTAS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_NOTAS_VIP" msprop:Generator_ColumnVarNameInTable="columnRV_NOTAS_VIP" msprop:Generator_ColumnPropNameInRow="RV_NOTAS_VIP" msprop:Generator_ColumnPropNameInTable="RV_NOTAS_VIPColumn" msprop:Generator_UserColumnName="RV_NOTAS_VIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_NOTAS_SIS" msprop:Generator_ColumnVarNameInTable="columnRV_NOTAS_SIS" msprop:Generator_ColumnPropNameInRow="RV_NOTAS_SIS" msprop:Generator_ColumnPropNameInTable="RV_NOTAS_SISColumn" msprop:Generator_UserColumnName="RV_NOTAS_SIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_LLEGADA" msprop:Generator_ColumnVarNameInTable="columnRV_LLEGADA" msprop:Generator_ColumnPropNameInRow="RV_LLEGADA" msprop:Generator_ColumnPropNameInTable="RV_LLEGADAColumn" msprop:Generator_UserColumnName="RV_LLEGADA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SALIDA" msprop:Generator_ColumnVarNameInTable="columnRV_SALIDA" msprop:Generator_ColumnPropNameInRow="RV_SALIDA" msprop:Generator_ColumnPropNameInTable="RV_SALIDAColumn" msprop:Generator_UserColumnName="RV_SALIDA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_NOCHES" msprop:Generator_ColumnVarNameInTable="columnRV_NOCHES" msprop:Generator_ColumnPropNameInRow="RV_NOCHES" msprop:Generator_ColumnPropNameInTable="RV_NOCHESColumn" msprop:Generator_UserColumnName="RV_NOCHES" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_LLEGADA_H" msprop:Generator_ColumnVarNameInTable="columnRV_LLEGADA_H" msprop:Generator_ColumnPropNameInRow="RV_LLEGADA_H" msprop:Generator_ColumnPropNameInTable="RV_LLEGADA_HColumn" msprop:Generator_UserColumnName="RV_LLEGADA_H" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SALIDA_H" msprop:Generator_ColumnVarNameInTable="columnRV_SALIDA_H" msprop:Generator_ColumnPropNameInRow="RV_SALIDA_H" msprop:Generator_ColumnPropNameInTable="RV_SALIDA_HColumn" msprop:Generator_UserColumnName="RV_SALIDA_H" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TIPO_HAB" msprop:Generator_ColumnVarNameInTable="columnRV_TIPO_HAB" msprop:Generator_ColumnPropNameInRow="RV_TIPO_HAB" msprop:Generator_ColumnPropNameInTable="RV_TIPO_HABColumn" msprop:Generator_UserColumnName="RV_TIPO_HAB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TARIFA" msprop:Generator_ColumnVarNameInTable="columnRV_TARIFA" msprop:Generator_ColumnPropNameInRow="RV_TARIFA" msprop:Generator_ColumnPropNameInTable="RV_TARIFAColumn" msprop:Generator_UserColumnName="RV_TARIFA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_ADULTO" msprop:Generator_ColumnVarNameInTable="columnRV_ADULTO" msprop:Generator_ColumnPropNameInRow="RV_ADULTO" msprop:Generator_ColumnPropNameInTable="RV_ADULTOColumn" msprop:Generator_UserColumnName="RV_ADULTO" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_MENOR" msprop:Generator_ColumnVarNameInTable="columnRV_MENOR" msprop:Generator_ColumnPropNameInRow="RV_MENOR" msprop:Generator_ColumnPropNameInTable="RV_MENORColumn" msprop:Generator_UserColumnName="RV_MENOR" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_BEBE" msprop:Generator_ColumnVarNameInTable="columnRV_BEBE" msprop:Generator_ColumnPropNameInRow="RV_BEBE" msprop:Generator_ColumnPropNameInTable="RV_BEBEColumn" msprop:Generator_UserColumnName="RV_BEBE" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_FASE" msprop:Generator_ColumnVarNameInTable="columnRV_FASE" msprop:Generator_ColumnPropNameInRow="RV_FASE" msprop:Generator_ColumnPropNameInTable="RV_FASEColumn" msprop:Generator_UserColumnName="RV_FASE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_PAQUETE" msprop:Generator_ColumnVarNameInTable="columnRV_PAQUETE" msprop:Generator_ColumnPropNameInRow="RV_PAQUETE" msprop:Generator_ColumnPropNameInTable="RV_PAQUETEColumn" msprop:Generator_UserColumnName="RV_PAQUETE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_HABI" msprop:Generator_ColumnVarNameInTable="columnRV_HABI" msprop:Generator_ColumnPropNameInRow="RV_HABI" msprop:Generator_ColumnPropNameInTable="RV_HABIColumn" msprop:Generator_UserColumnName="RV_HABI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_ROOMING" msprop:Generator_ColumnVarNameInTable="columnRV_ROOMING" msprop:Generator_ColumnPropNameInRow="RV_ROOMING" msprop:Generator_ColumnPropNameInTable="RV_ROOMINGColumn" msprop:Generator_UserColumnName="RV_ROOMING" type="xs:int" minOccurs="0" />
+              <xs:element name="RV_LINEA" msprop:Generator_ColumnVarNameInTable="columnRV_LINEA" msprop:Generator_ColumnPropNameInRow="RV_LINEA" msprop:Generator_ColumnPropNameInTable="RV_LINEAColumn" msprop:Generator_UserColumnName="RV_LINEA" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_CONFIRMA" msprop:Generator_ColumnVarNameInTable="columnRV_CONFIRMA" msprop:Generator_ColumnPropNameInRow="RV_CONFIRMA" msprop:Generator_ColumnPropNameInTable="RV_CONFIRMAColumn" msprop:Generator_UserColumnName="RV_CONFIRMA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CREDITO" msprop:Generator_ColumnVarNameInTable="columnRV_CREDITO" msprop:Generator_ColumnPropNameInRow="RV_CREDITO" msprop:Generator_ColumnPropNameInTable="RV_CREDITOColumn" msprop:Generator_UserColumnName="RV_CREDITO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_VOUCHER" msprop:Generator_ColumnVarNameInTable="columnRV_VOUCHER" msprop:Generator_ColumnPropNameInRow="RV_VOUCHER" msprop:Generator_ColumnPropNameInTable="RV_VOUCHERColumn" msprop:Generator_UserColumnName="RV_VOUCHER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_IMPORTE" msprop:Generator_ColumnVarNameInTable="columnRV_IMPORTE" msprop:Generator_ColumnPropNameInRow="RV_IMPORTE" msprop:Generator_ColumnPropNameInTable="RV_IMPORTEColumn" msprop:Generator_UserColumnName="RV_IMPORTE" type="xs:double" minOccurs="0" />
+              <xs:element name="RV_TOT_ALOJ" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_ALOJ" msprop:Generator_ColumnPropNameInRow="RV_TOT_ALOJ" msprop:Generator_ColumnPropNameInTable="RV_TOT_ALOJColumn" msprop:Generator_UserColumnName="RV_TOT_ALOJ" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_TOT_PLAN" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_PLAN" msprop:Generator_ColumnPropNameInRow="RV_TOT_PLAN" msprop:Generator_ColumnPropNameInTable="RV_TOT_PLANColumn" msprop:Generator_UserColumnName="RV_TOT_PLAN" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_TOT_PAQUETE" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_PAQUETE" msprop:Generator_ColumnPropNameInRow="RV_TOT_PAQUETE" msprop:Generator_ColumnPropNameInTable="RV_TOT_PAQUETEColumn" msprop:Generator_UserColumnName="RV_TOT_PAQUETE" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_DEPOSITO" msprop:Generator_ColumnVarNameInTable="columnRV_DEPOSITO" msprop:Generator_ColumnPropNameInRow="RV_DEPOSITO" msprop:Generator_ColumnPropNameInTable="RV_DEPOSITOColumn" msprop:Generator_UserColumnName="RV_DEPOSITO" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_LIMITE" msprop:Generator_ColumnVarNameInTable="columnRV_LIMITE" msprop:Generator_ColumnPropNameInRow="RV_LIMITE" msprop:Generator_ColumnPropNameInTable="RV_LIMITEColumn" msprop:Generator_UserColumnName="RV_LIMITE" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_CAP_F" msprop:Generator_ColumnVarNameInTable="columnRV_CAP_F" msprop:Generator_ColumnPropNameInRow="RV_CAP_F" msprop:Generator_ColumnPropNameInTable="RV_CAP_FColumn" msprop:Generator_UserColumnName="RV_CAP_F" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CAP_H" msprop:Generator_ColumnVarNameInTable="columnRV_CAP_H" msprop:Generator_ColumnPropNameInRow="RV_CAP_H" msprop:Generator_ColumnPropNameInTable="RV_CAP_HColumn" msprop:Generator_UserColumnName="RV_CAP_H" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CAP_U" msprop:Generator_ColumnVarNameInTable="columnRV_CAP_U" msprop:Generator_ColumnPropNameInRow="RV_CAP_U" msprop:Generator_ColumnPropNameInTable="RV_CAP_UColumn" msprop:Generator_UserColumnName="RV_CAP_U" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CAN_C" msprop:Generator_ColumnVarNameInTable="columnRV_CAN_C" msprop:Generator_ColumnPropNameInRow="RV_CAN_C" msprop:Generator_ColumnPropNameInTable="RV_CAN_CColumn" msprop:Generator_UserColumnName="RV_CAN_C" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CAN_F" msprop:Generator_ColumnVarNameInTable="columnRV_CAN_F" msprop:Generator_ColumnPropNameInRow="RV_CAN_F" msprop:Generator_ColumnPropNameInTable="RV_CAN_FColumn" msprop:Generator_UserColumnName="RV_CAN_F" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RV_CAN_H" msprop:Generator_ColumnVarNameInTable="columnRV_CAN_H" msprop:Generator_ColumnPropNameInRow="RV_CAN_H" msprop:Generator_ColumnPropNameInTable="RV_CAN_HColumn" msprop:Generator_UserColumnName="RV_CAN_H" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CAN_U" msprop:Generator_ColumnVarNameInTable="columnRV_CAN_U" msprop:Generator_ColumnPropNameInRow="RV_CAN_U" msprop:Generator_ColumnPropNameInTable="RV_CAN_UColumn" msprop:Generator_UserColumnName="RV_CAN_U" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_MOD_F" msprop:Generator_ColumnVarNameInTable="columnRV_MOD_F" msprop:Generator_ColumnPropNameInRow="RV_MOD_F" msprop:Generator_ColumnPropNameInTable="RV_MOD_FColumn" msprop:Generator_UserColumnName="RV_MOD_F" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RV_MOD_H" msprop:Generator_ColumnVarNameInTable="columnRV_MOD_H" msprop:Generator_ColumnPropNameInRow="RV_MOD_H" msprop:Generator_ColumnPropNameInTable="RV_MOD_HColumn" msprop:Generator_UserColumnName="RV_MOD_H" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_MOD_U" msprop:Generator_ColumnVarNameInTable="columnRV_MOD_U" msprop:Generator_ColumnPropNameInRow="RV_MOD_U" msprop:Generator_ColumnPropNameInTable="RV_MOD_UColumn" msprop:Generator_UserColumnName="RV_MOD_U" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_ENT_U" msprop:Generator_ColumnVarNameInTable="columnRV_ENT_U" msprop:Generator_ColumnPropNameInRow="RV_ENT_U" msprop:Generator_ColumnPropNameInTable="RV_ENT_UColumn" msprop:Generator_UserColumnName="RV_ENT_U" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SAL_U" msprop:Generator_ColumnVarNameInTable="columnRV_SAL_U" msprop:Generator_ColumnPropNameInRow="RV_SAL_U" msprop:Generator_ColumnPropNameInTable="RV_SAL_UColumn" msprop:Generator_UserColumnName="RV_SAL_U" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_HOTEL_DEST" msprop:Generator_ColumnVarNameInTable="columnRV_HOTEL_DEST" msprop:Generator_ColumnPropNameInRow="RV_HOTEL_DEST" msprop:Generator_ColumnPropNameInTable="RV_HOTEL_DESTColumn" msprop:Generator_UserColumnName="RV_HOTEL_DEST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_RESERVA_P" msprop:Generator_ColumnVarNameInTable="columnRV_RESERVA_P" msprop:Generator_ColumnPropNameInRow="RV_RESERVA_P" msprop:Generator_ColumnPropNameInTable="RV_RESERVA_PColumn" msprop:Generator_UserColumnName="RV_RESERVA_P" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_HOTEL_ORIG" msprop:Generator_ColumnVarNameInTable="columnRV_HOTEL_ORIG" msprop:Generator_ColumnPropNameInRow="RV_HOTEL_ORIG" msprop:Generator_ColumnPropNameInTable="RV_HOTEL_ORIGColumn" msprop:Generator_UserColumnName="RV_HOTEL_ORIG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_EXTRAS_CXC" msprop:Generator_ColumnVarNameInTable="columnRV_EXTRAS_CXC" msprop:Generator_ColumnPropNameInRow="RV_EXTRAS_CXC" msprop:Generator_ColumnPropNameInTable="RV_EXTRAS_CXCColumn" msprop:Generator_UserColumnName="RV_EXTRAS_CXC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_LLAVES" msprop:Generator_ColumnVarNameInTable="columnRV_LLAVES" msprop:Generator_ColumnPropNameInRow="RV_LLAVES" msprop:Generator_ColumnPropNameInTable="RV_LLAVESColumn" msprop:Generator_UserColumnName="RV_LLAVES" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_PLAN_DES" msprop:Generator_ColumnVarNameInTable="columnRV_PLAN_DES" msprop:Generator_ColumnPropNameInRow="RV_PLAN_DES" msprop:Generator_ColumnPropNameInTable="RV_PLAN_DESColumn" msprop:Generator_UserColumnName="RV_PLAN_DES" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_PLAN_COM" msprop:Generator_ColumnVarNameInTable="columnRV_PLAN_COM" msprop:Generator_ColumnPropNameInRow="RV_PLAN_COM" msprop:Generator_ColumnPropNameInTable="RV_PLAN_COMColumn" msprop:Generator_UserColumnName="RV_PLAN_COM" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_PLAN_CEN" msprop:Generator_ColumnVarNameInTable="columnRV_PLAN_CEN" msprop:Generator_ColumnPropNameInRow="RV_PLAN_CEN" msprop:Generator_ColumnPropNameInTable="RV_PLAN_CENColumn" msprop:Generator_UserColumnName="RV_PLAN_CEN" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_STATUS" msprop:Generator_ColumnVarNameInTable="columnRV_STATUS" msprop:Generator_ColumnPropNameInRow="RV_STATUS" msprop:Generator_ColumnPropNameInTable="RV_STATUSColumn" msprop:Generator_UserColumnName="RV_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_PLANES" msprop:Generator_ColumnVarNameInTable="columnRV_PLANES" msprop:Generator_ColumnPropNameInRow="RV_PLANES" msprop:Generator_ColumnPropNameInTable="RV_PLANESColumn" msprop:Generator_UserColumnName="RV_PLANES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SALIDA_PREV" msprop:Generator_ColumnVarNameInTable="columnRV_SALIDA_PREV" msprop:Generator_ColumnPropNameInRow="RV_SALIDA_PREV" msprop:Generator_ColumnPropNameInTable="RV_SALIDA_PREVColumn" msprop:Generator_UserColumnName="RV_SALIDA_PREV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CXC_MOVI" msprop:Generator_ColumnVarNameInTable="columnRV_CXC_MOVI" msprop:Generator_ColumnPropNameInRow="RV_CXC_MOVI" msprop:Generator_ColumnPropNameInTable="RV_CXC_MOVIColumn" msprop:Generator_UserColumnName="RV_CXC_MOVI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CXC_FASE" msprop:Generator_ColumnVarNameInTable="columnRV_CXC_FASE" msprop:Generator_ColumnPropNameInRow="RV_CXC_FASE" msprop:Generator_ColumnPropNameInTable="RV_CXC_FASEColumn" msprop:Generator_UserColumnName="RV_CXC_FASE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_BON_BEB" msprop:Generator_ColumnVarNameInTable="columnRV_BON_BEB" msprop:Generator_ColumnPropNameInRow="RV_BON_BEB" msprop:Generator_ColumnPropNameInTable="RV_BON_BEBColumn" msprop:Generator_UserColumnName="RV_BON_BEB" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_BON_COM" msprop:Generator_ColumnVarNameInTable="columnRV_BON_COM" msprop:Generator_ColumnPropNameInRow="RV_BON_COM" msprop:Generator_ColumnPropNameInTable="RV_BON_COMColumn" msprop:Generator_UserColumnName="RV_BON_COM" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_CAJA_SEG" msprop:Generator_ColumnVarNameInTable="columnRV_CAJA_SEG" msprop:Generator_ColumnPropNameInRow="RV_CAJA_SEG" msprop:Generator_ColumnPropNameInTable="RV_CAJA_SEGColumn" msprop:Generator_UserColumnName="RV_CAJA_SEG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_OUT_EXPRESS" msprop:Generator_ColumnVarNameInTable="columnRV_OUT_EXPRESS" msprop:Generator_ColumnPropNameInRow="RV_OUT_EXPRESS" msprop:Generator_ColumnPropNameInTable="RV_OUT_EXPRESSColumn" msprop:Generator_UserColumnName="RV_OUT_EXPRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_RAZON" msprop:Generator_ColumnVarNameInTable="columnRV_RAZON" msprop:Generator_ColumnPropNameInRow="RV_RAZON" msprop:Generator_ColumnPropNameInTable="RV_RAZONColumn" msprop:Generator_UserColumnName="RV_RAZON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_RFC" msprop:Generator_ColumnVarNameInTable="columnRV_RFC" msprop:Generator_ColumnPropNameInRow="RV_RFC" msprop:Generator_ColumnPropNameInTable="RV_RFCColumn" msprop:Generator_UserColumnName="RV_RFC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_FACTURA" msprop:Generator_ColumnVarNameInTable="columnRV_FACTURA" msprop:Generator_ColumnPropNameInRow="RV_FACTURA" msprop:Generator_ColumnPropNameInTable="RV_FACTURAColumn" msprop:Generator_UserColumnName="RV_FACTURA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_IMPRESA" msprop:Generator_ColumnVarNameInTable="columnRV_IMPRESA" msprop:Generator_ColumnPropNameInRow="RV_IMPRESA" msprop:Generator_ColumnPropNameInTable="RV_IMPRESAColumn" msprop:Generator_UserColumnName="RV_IMPRESA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_FACTURA_AGE" msprop:Generator_ColumnVarNameInTable="columnRV_FACTURA_AGE" msprop:Generator_ColumnPropNameInRow="RV_FACTURA_AGE" msprop:Generator_ColumnPropNameInTable="RV_FACTURA_AGEColumn" msprop:Generator_UserColumnName="RV_FACTURA_AGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TOT_PROP_CAM" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_PROP_CAM" msprop:Generator_ColumnPropNameInRow="RV_TOT_PROP_CAM" msprop:Generator_ColumnPropNameInTable="RV_TOT_PROP_CAMColumn" msprop:Generator_UserColumnName="RV_TOT_PROP_CAM" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_TOT_PROP_BEL" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_PROP_BEL" msprop:Generator_ColumnPropNameInRow="RV_TOT_PROP_BEL" msprop:Generator_ColumnPropNameInTable="RV_TOT_PROP_BELColumn" msprop:Generator_UserColumnName="RV_TOT_PROP_BEL" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_TOT_PROP_MES" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_PROP_MES" msprop:Generator_ColumnPropNameInRow="RV_TOT_PROP_MES" msprop:Generator_ColumnPropNameInTable="RV_TOT_PROP_MESColumn" msprop:Generator_UserColumnName="RV_TOT_PROP_MES" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_TOT_IVA" msprop:Generator_ColumnVarNameInTable="columnRV_TOT_IVA" msprop:Generator_ColumnPropNameInRow="RV_TOT_IVA" msprop:Generator_ColumnPropNameInTable="RV_TOT_IVAColumn" msprop:Generator_UserColumnName="RV_TOT_IVA" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_POLIZA" msprop:Generator_ColumnVarNameInTable="columnRV_POLIZA" msprop:Generator_ColumnPropNameInRow="RV_POLIZA" msprop:Generator_ColumnPropNameInTable="RV_POLIZAColumn" msprop:Generator_UserColumnName="RV_POLIZA" type="xs:int" minOccurs="0" />
+              <xs:element name="RV_F_PAGO_MOVI" msprop:Generator_ColumnVarNameInTable="columnRV_F_PAGO_MOVI" msprop:Generator_ColumnPropNameInRow="RV_F_PAGO_MOVI" msprop:Generator_ColumnPropNameInTable="RV_F_PAGO_MOVIColumn" msprop:Generator_UserColumnName="RV_F_PAGO_MOVI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_F_PAGO_FASE" msprop:Generator_ColumnVarNameInTable="columnRV_F_PAGO_FASE" msprop:Generator_ColumnPropNameInRow="RV_F_PAGO_FASE" msprop:Generator_ColumnPropNameInTable="RV_F_PAGO_FASEColumn" msprop:Generator_UserColumnName="RV_F_PAGO_FASE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TARJ_NUMERO" msprop:Generator_ColumnVarNameInTable="columnRV_TARJ_NUMERO" msprop:Generator_ColumnPropNameInRow="RV_TARJ_NUMERO" msprop:Generator_ColumnPropNameInTable="RV_TARJ_NUMEROColumn" msprop:Generator_UserColumnName="RV_TARJ_NUMERO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TARJ_VENCIM" msprop:Generator_ColumnVarNameInTable="columnRV_TARJ_VENCIM" msprop:Generator_ColumnPropNameInRow="RV_TARJ_VENCIM" msprop:Generator_ColumnPropNameInTable="RV_TARJ_VENCIMColumn" msprop:Generator_UserColumnName="RV_TARJ_VENCIM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_FOLIO_CR" msprop:Generator_ColumnVarNameInTable="columnRV_FOLIO_CR" msprop:Generator_ColumnPropNameInRow="RV_FOLIO_CR" msprop:Generator_ColumnPropNameInTable="RV_FOLIO_CRColumn" msprop:Generator_UserColumnName="RV_FOLIO_CR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SERVIBAR" msprop:Generator_ColumnVarNameInTable="columnRV_SERVIBAR" msprop:Generator_ColumnPropNameInRow="RV_SERVIBAR" msprop:Generator_ColumnPropNameInTable="RV_SERVIBARColumn" msprop:Generator_UserColumnName="RV_SERVIBAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SERVIBAR_U" msprop:Generator_ColumnVarNameInTable="columnRV_SERVIBAR_U" msprop:Generator_ColumnPropNameInRow="RV_SERVIBAR_U" msprop:Generator_ColumnPropNameInTable="RV_SERVIBAR_UColumn" msprop:Generator_UserColumnName="RV_SERVIBAR_U" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TIPO_HAB_RENTA" msprop:Generator_ColumnVarNameInTable="columnRV_TIPO_HAB_RENTA" msprop:Generator_ColumnPropNameInRow="RV_TIPO_HAB_RENTA" msprop:Generator_ColumnPropNameInTable="RV_TIPO_HAB_RENTAColumn" msprop:Generator_UserColumnName="RV_TIPO_HAB_RENTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_HOTEL_RENTA" msprop:Generator_ColumnVarNameInTable="columnRV_HOTEL_RENTA" msprop:Generator_ColumnPropNameInRow="RV_HOTEL_RENTA" msprop:Generator_ColumnPropNameInTable="RV_HOTEL_RENTAColumn" msprop:Generator_UserColumnName="RV_HOTEL_RENTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_EMAIL" msprop:Generator_ColumnVarNameInTable="columnRV_EMAIL" msprop:Generator_ColumnPropNameInRow="RV_EMAIL" msprop:Generator_ColumnPropNameInTable="RV_EMAILColumn" msprop:Generator_UserColumnName="RV_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_MONEDA" msprop:Generator_ColumnVarNameInTable="columnRV_MONEDA" msprop:Generator_ColumnPropNameInRow="RV_MONEDA" msprop:Generator_ColumnPropNameInTable="RV_MONEDAColumn" msprop:Generator_UserColumnName="RV_MONEDA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_PREPAGO_F" msprop:Generator_ColumnVarNameInTable="columnRV_PREPAGO_F" msprop:Generator_ColumnPropNameInRow="RV_PREPAGO_F" msprop:Generator_ColumnPropNameInTable="RV_PREPAGO_FColumn" msprop:Generator_UserColumnName="RV_PREPAGO_F" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RV_PREPAGO_I" msprop:Generator_ColumnVarNameInTable="columnRV_PREPAGO_I" msprop:Generator_ColumnPropNameInRow="RV_PREPAGO_I" msprop:Generator_ColumnPropNameInTable="RV_PREPAGO_IColumn" msprop:Generator_UserColumnName="RV_PREPAGO_I" type="xs:double" minOccurs="0" />
+              <xs:element name="RV_PROMOCION" msprop:Generator_ColumnVarNameInTable="columnRV_PROMOCION" msprop:Generator_ColumnPropNameInRow="RV_PROMOCION" msprop:Generator_ColumnPropNameInTable="RV_PROMOCIONColumn" msprop:Generator_UserColumnName="RV_PROMOCION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TC" msprop:Generator_ColumnVarNameInTable="columnRV_TC" msprop:Generator_ColumnPropNameInRow="RV_TC" msprop:Generator_ColumnPropNameInTable="RV_TCColumn" msprop:Generator_UserColumnName="RV_TC" type="xs:float" minOccurs="0" />
+              <xs:element name="RV_JUNIOR" msprop:Generator_ColumnVarNameInTable="columnRV_JUNIOR" msprop:Generator_ColumnPropNameInRow="RV_JUNIOR" msprop:Generator_ColumnPropNameInTable="RV_JUNIORColumn" msprop:Generator_UserColumnName="RV_JUNIOR" type="xs:short" minOccurs="0" />
+              <xs:element name="RV_EDIFICIO" msprop:Generator_ColumnVarNameInTable="columnRV_EDIFICIO" msprop:Generator_ColumnPropNameInRow="RV_EDIFICIO" msprop:Generator_ColumnPropNameInTable="RV_EDIFICIOColumn" msprop:Generator_UserColumnName="RV_EDIFICIO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_DESPLAZO_F" msprop:Generator_ColumnVarNameInTable="columnRV_DESPLAZO_F" msprop:Generator_ColumnPropNameInRow="RV_DESPLAZO_F" msprop:Generator_ColumnPropNameInTable="RV_DESPLAZO_FColumn" msprop:Generator_UserColumnName="RV_DESPLAZO_F" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RV_RESERVA_ORIG" msprop:Generator_ColumnVarNameInTable="columnRV_RESERVA_ORIG" msprop:Generator_ColumnPropNameInRow="RV_RESERVA_ORIG" msprop:Generator_ColumnPropNameInTable="RV_RESERVA_ORIGColumn" msprop:Generator_UserColumnName="RV_RESERVA_ORIG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_RESERVA_DEST" msprop:Generator_ColumnVarNameInTable="columnRV_RESERVA_DEST" msprop:Generator_ColumnPropNameInRow="RV_RESERVA_DEST" msprop:Generator_ColumnPropNameInTable="RV_RESERVA_DESTColumn" msprop:Generator_UserColumnName="RV_RESERVA_DEST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_TIPO_VENTA" msprop:Generator_ColumnVarNameInTable="columnRV_TIPO_VENTA" msprop:Generator_ColumnPropNameInRow="RV_TIPO_VENTA" msprop:Generator_ColumnPropNameInTable="RV_TIPO_VENTAColumn" msprop:Generator_UserColumnName="RV_TIPO_VENTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_SERIE" msprop:Generator_ColumnVarNameInTable="columnRV_SERIE" msprop:Generator_ColumnPropNameInRow="RV_SERIE" msprop:Generator_ColumnPropNameInTable="RV_SERIEColumn" msprop:Generator_UserColumnName="RV_SERIE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CREDITO_HOTEL" msprop:Generator_ColumnVarNameInTable="columnRV_CREDITO_HOTEL" msprop:Generator_ColumnPropNameInRow="RV_CREDITO_HOTEL" msprop:Generator_ColumnPropNameInTable="RV_CREDITO_HOTELColumn" msprop:Generator_UserColumnName="RV_CREDITO_HOTEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_CATEGORIA" msprop:Generator_ColumnVarNameInTable="columnRV_CATEGORIA" msprop:Generator_ColumnPropNameInRow="RV_CATEGORIA" msprop:Generator_ColumnPropNameInTable="RV_CATEGORIAColumn" msprop:Generator_UserColumnName="RV_CATEGORIA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RV_ACTION" msprop:Generator_ColumnVarNameInTable="columnRV_ACTION" msprop:Generator_ColumnPropNameInRow="RV_ACTION" msprop:Generator_ColumnPropNameInTable="RV_ACTIONColumn" msprop:Generator_UserColumnName="RV_ACTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OB_RESERVA" msprop:Generator_ColumnVarNameInTable="columnOB_RESERVA" msprop:Generator_ColumnPropNameInRow="OB_RESERVA" msprop:Generator_ColumnPropNameInTable="OB_RESERVAColumn" msprop:Generator_UserColumnName="OB_RESERVA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
